@@ -103,3 +103,7 @@ h3.text-center {
   color: var(--color1);
   margin-bottom: 30px;
 }
+
+.footer-custom .container {
+    background-color: var(--color3);
+}
