@@ -3,41 +3,127 @@
 
 <head>
     <title>Our Menu - Ristorante Con Fusion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Our Menu</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservations.html">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <h1>Our Menu</h1>
+        </div>
     </header>
-    <section id="menu">
-        <div>
-            <h2>Our Menu</h2>
-            <div>
-                <h3>Appetizers</h3>
-                <p>Bruschetta - Freshly toasted bread topped with a blend of diced tomatoes, garlic, and basil.</p>
-                <p>Caprese Salad - Ripe tomatoes, fresh mozzarella, and basil drizzled with balsamic reduction.</p>
+
+    <section id="menu" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h2 class="text-center">Appetizers</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Bruschetta</h3>
+                            <p class="card-text">Freshly toasted bread topped with a blend of diced tomatoes, garlic, and basil.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Caprese Salad</h3>
+                            <p class="card-text">Ripe tomatoes, fresh mozzarella, and basil drizzled with balsamic reduction.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Main Courses</h3>
-                <p>Spaghetti Carbonara - Classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
-                <p>Chicken Tikka Masala - Tender chicken pieces in a creamy, spiced tomato sauce served with basmati rice.</p>
+
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h2 class="text-center">Main Courses</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Spaghetti Carbonara</h3>
+                            <p class="card-text">Classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Chicken Tikka Masala</h3>
+                            <p class="card-text">Tender chicken pieces in a creamy, spiced tomato sauce served with basmati rice.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Desserts</h3>
-                <p>Tiramisu - Traditional Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese.</p>
-                <p>Gulab Jamun - Sweet Indian dessert made of deep-fried dough balls soaked in sugar syrup.</p>
+
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h2 class="text-center">Desserts</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Tiramisu</h3>
+                            <p class="card-text">Traditional Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Gulab Jamun</h3>
+                            <p class="card-text">Sweet Indian dessert made of deep-fried dough balls soaked in sugar syrup.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <p>© Copyright 2018 Ristorante Con Fusion</p>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>© Copyright 2018 Ristorante Con Fusion</p>
+        </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
