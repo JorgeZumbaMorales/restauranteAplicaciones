@@ -3,56 +3,140 @@
 
 <head>
     <title>Reservations - Ristorante Con Fusion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+        }
+        header, footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .reservation-section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .reservation-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .reservation-section p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            padding: 0.5rem 2rem;
+        }
+        .image-separator {
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservations.html">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header>
         <h1>Reservations</h1>
     </header>
-    <section id="reservations">
-        <div>
-            <h2>Make a Reservation</h2>
-            <p>We look forward to welcoming you to Ristorante Con Fusion. Please fill out the form below to make a reservation.</p>
-            <form>
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div>
-                    <label for="date">Date:</label>
-                    <input type="date" id="date" name="date" required>
-                </div>
-                <div>
-                    <label for="time">Time:</label>
-                    <input type="time" id="time" name="time" required>
-                </div>
-                <div>
-                    <label for="guests">Number of Guests:</label>
-                    <input type="number" id="guests" name="guests" required>
-                </div>
-                <div>
-                    <button type="submit">Make Reservation</button>
-                </div>
-            </form>
+
+    <section class="reservation-section">
+        <h1>Reserva en Ristorante Con Fusion</h1>
+        <img src="image.png" alt="Decorative Image" class="image-separator">
+        <p>Bienvenido a nuestro sistema de reservas de Ristorante Con Fusion. Nuestro horario de apertura es de 13:00 a 15:00 y de 19:00 a 21:30.</p>
+        <p>Para realizar la reserva debe seleccionar el día, el número de comensales y la hora deseada. Se ruega máxima puntualidad ya que la reserva tiene un tiempo de cortesía de 20 minutos. Si al seleccionar el número de comensales no le muestra los deseados, es debido a que ya no hay mesas disponibles para la capacidad deseada. Por favor, no seleccionen un número de comensales diferente de los deseados.</p>
+        <p>También puede apuntarse en nuestra lista de espera, en el caso de que haya una anulación, seremos nosotros quienes nos pongamos en contacto.</p>
+        <p>Rellene el formulario con sus datos e indique si alguno de los comensales tiene alergias o intolerancias, esto mejorará su experiencia.</p>
+        <p>Su reserva quedará aceptada una vez reciba el correo de confirmación de la misma. En el caso de que no vayan a asistir rogamos que nos avisen con la cancelación para que otras personas puedan disfrutar de la mesa.</p>
+        <p>Para dudas en la reserva o grupos superiores a 8 personas, escribir al correo electrónico de reservas@fusionrestaurant.com.</p>
+        <p>Reserve y saboree la auténtica comida criolla ecuatoriana!</p>
+
+        <div class="form-group">
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" class="form-control" required>
         </div>
+        <div class="form-group">
+            <label for="guests">Número de Comensales:</label>
+            <select id="guests" name="guests" class="form-control" required>
+                <option value="1">1 Persona</option>
+                <option value="2">2 Personas</option>
+                <option value="3">3 Personas</option>
+                <option value="4">4 Personas</option>
+                <option value="5">5 Personas</option>
+                <option value="6">6 Personas</option>
+                <option value="7">7 Personas</option>
+                <option value="8">8 Personas</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="time">Hora:</label>
+            <select id="time" name="time" class="form-control" required>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Reservar</button>
+
+        <img src="image.png" alt="Decorative Image" class="image-separator">
     </section>
+
     <footer>
         <p>© Copyright 2018 Ristorante Con Fusion</p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

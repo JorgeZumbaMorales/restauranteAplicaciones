@@ -3,29 +3,111 @@
 
 <head>
     <title>About Us - Ristorante Con Fusion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header, footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+        }
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 2rem;
+        }
+        .about-text, .about-image {
+            flex: 1 1 50%;
+            padding: 1rem;
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+        }
+        h1, h2, p {
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservations.html">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center">
         <h1>About Us</h1>
     </header>
-    <section id="about">
-        <div>
-            <h2>About Us</h2>
+
+    <section class="about-section">
+        <div class="about-image">
+            <img src="image1.png" alt="Image Description 1">
+        </div>
+        <div class="about-text">
+            <h2>Welcome to Ristorante Con Fusion</h2>
             <p>Welcome to Ristorante Con Fusion, where we blend the finest culinary traditions from around the world into one unforgettable dining experience. Our talented chefs craft each dish with passion, creativity, and a dedication to excellence, ensuring that every meal is a feast for the senses.</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-text">
+            <h2>Our Mission</h2>
             <p>Our mission is to provide a dining experience that combines innovative cuisine with a warm and inviting atmosphere. Whether you are celebrating a special occasion or enjoying a casual meal with friends, we strive to make every visit memorable.</p>
+        </div>
+        <div class="about-image">
+            <img src="image2.png" alt="Image Description 2">
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-image">
+            <img src="image3.png" alt="Image Description 3">
+        </div>
+        <div class="about-text">
+            <h2>Join Us</h2>
             <p>Join us on a culinary journey that transcends borders and delights the palate with flavors from every corner of the globe.</p>
         </div>
     </section>
-    <footer>
+
+    <footer class="text-center">
         <p>© Copyright 2018 Ristorante Con Fusion</p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
