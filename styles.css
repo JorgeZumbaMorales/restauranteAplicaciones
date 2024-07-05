@@ -4,10 +4,13 @@
   --color3: #D98D62;
   --color4: #D9B29C;
   --color5: #F2F2F2;
+  --color6: #EDE7E3;
+  --color7: #444;
+  --color8: #333;
 }
 
 body {
-  background-color: var(--color5);
+  background-color: var(--color6);
   color: var(--color2);
   font-family: 'Roboto', sans-serif;
 }
@@ -19,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-custom {
   background-color: var(--color4);
   color: var(--color2);
+  margin-bottom: 0;
 }
 
 .footer-custom {
@@ -29,12 +33,21 @@ h1, h2, h3, h4, h5, h6 {
 .card-custom {
   border: 1px solid var(--color1);
   background-color: var(--color5);
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-custom:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  color: var(--color7);
+}
+
+.card-text {
+  color: var(--color8);
 }
 
 .btn-custom {
@@ -58,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -74,4 +87,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-nav .nav-item .nav-link:hover {
   color: var(--color2) !important;
+}
+
+.container-fluid, .container {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container {
+  background-color: var(--color6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3.text-center {
+  color: var(--color1);
+  margin-bottom: 30px;
 }
