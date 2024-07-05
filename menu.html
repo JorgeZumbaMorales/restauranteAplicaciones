@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Our Menu - Ristorante Con Fusion</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Ristorante Con Fusion</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -12,8 +12,8 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-0">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,8 @@
             </div>
         </div>
     </nav>
-    <header class="bg-dark text-white text-center py-3">
+
+    <header class="bg-dark text-white text-center py-5">
         <div class="container">
             <h1>Our Menu</h1>
         </div>
@@ -53,6 +54,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-4">
+                        <img src="images/bruschetta.jpg" class="card-img-top" alt="Bruschetta">
                         <div class="card-body">
                             <h3 class="card-title">Bruschetta</h3>
                             <p class="card-text">Freshly toasted bread topped with a blend of diced tomatoes, garlic, and basil.</p>
@@ -61,6 +63,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-4">
+                        <img src="images/caprese_salad.jpg" class="card-img-top" alt="Caprese Salad">
                         <div class="card-body">
                             <h3 class="card-title">Caprese Salad</h3>
                             <p class="card-text">Ripe tomatoes, fresh mozzarella, and basil drizzled with balsamic reduction.</p>
@@ -75,6 +78,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-4">
+                        <img src="images/spaghetti_carbonara.jpg" class="card-img-top" alt="Spaghetti Carbonara">
                         <div class="card-body">
                             <h3 class="card-title">Spaghetti Carbonara</h3>
                             <p class="card-text">Classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
@@ -83,6 +87,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-4">
+                        <img src="images/chicken_tikka_masala.jpg" class="card-img-top" alt="Chicken Tikka Masala">
                         <div class="card-body">
                             <h3 class="card-title">Chicken Tikka Masala</h3>
                             <p class="card-text">Tender chicken pieces in a creamy, spiced tomato sauce served with basmati rice.</p>
@@ -97,6 +102,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-4">
+                        <img src="images/tiramisu.jpg" class="card-img-top" alt="Tiramisu">
                         <div class="card-body">
                             <h3 class="card-title">Tiramisu</h3>
                             <p class="card-text">Traditional Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese.</p>
@@ -105,6 +111,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-4">
+                        <img src="images/gulab_jamun.jpg" class="card-img-top" alt="Gulab Jamun">
                         <div class="card-body">
                             <h3 class="card-title">Gulab Jamun</h3>
                             <p class="card-text">Sweet Indian dessert made of deep-fried dough balls soaked in sugar syrup.</p>
@@ -115,9 +122,32 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="footer-custom py-4">
         <div class="container">
-            <p>© Copyright 2018 Ristorante Con Fusion</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Our Address</h5>
+                    <address>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+                        Tel.: +852 1234 5678<br>
+                        Fax: +852 8765 4321<br>
+                        Email: <a href="mailto:confusion@food.net" class="text-light">confusion@food.net</a>
+                    </address>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="http://google.com/+" class="btn btn-outline-light btn-sm mx-1">Google+</a>
+                        <a href="http://www.facebook.com/profile.php?id=" class="btn btn-outline-light btn-sm mx-1">Facebook</a>
+                        <a href="http://www.linkedin.com/in/" class="btn btn-outline-light btn-sm mx-1">LinkedIn</a>
+                        <a href="http://twitter.com/" class="btn btn-outline-light btn-sm mx-1">Twitter</a>
+                        <a href="http://youtube.com/" class="btn btn-outline-light btn-sm mx-1">YouTube</a>
+                        <a href="mailto:" class="btn btn-outline-light btn-sm mx-1">Mail</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
